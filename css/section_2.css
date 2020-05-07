@@ -1,0 +1,38 @@
+.list_2 li:nth-child(1) span {
+	background-color: red;
+}
+.list_2 li:nth-child(2) span {
+	background-color: blue;
+}
+.list_2 li:nth-child(3) span {
+	background-color: green;
+}
+.list_2 li:nth-child(4) span {
+	background-color: magenta;
+}
+.list_2 li:nth-child(5) span {
+	background-color: pink;
+}
+.list_2 li p {
+	transition: 0.8s;
+}
+.list_2 li:hover p {
+	color: white;
+}
+
+.list_2 li span {
+	background-color: black;
+	height: 0;
+	width: 0;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	transition: 1s;
+}
+.list_2 li:hover span {
+	width: var(--box-size);
+	height: var(--box-size);
+	left: 0;
+	top: 0;
+	transform: translateY(0%) scale(2);
+}
