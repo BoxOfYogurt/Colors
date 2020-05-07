@@ -1,0 +1,70 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	--box-size: 100px;
+	--bg-color: rgb(255, 255, 240);
+	--ff: 'Jost', sans-serif;
+	--fw: 200;
+	--fs: 1em;
+}
+
+/* GLOBAL TEXT ATTRIBUTES */
+h2 {
+	font-family: var(--ff);
+	font-weight: var(--fw);
+}
+p {
+	font-family: var(--ff);
+	font-weight: var(--fw);
+	font-size: var(--fs);
+	z-index: 1;
+}
+/* THE MAIN WRAPPER FOR THE WHOLE DOM*/
+.container {
+	display: grid;
+	grid-column: 1fr;
+	grid-column-gap: 1em;
+}
+/* THE HEADER */
+header {
+	text-align: center;
+	line-height: var(--box-size);
+	height: calc(var(--box-size) * 2);
+}
+/* SECTION PROPERTIES FOR ALL THE SECTIONS IN THE DOM */
+section {
+	position: relative;
+	font-family: var(--ff);
+	font-weight: var(--fw);
+	background-color: var(--bg-color);
+	height: calc(var(--box-size) * 2);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas: ". ul .";
+}
+/* UL PROPERTIES FOR ALL THE UL'S IN THE DOM */
+ul {
+	grid-area: ul;
+	display: grid;
+	width: calc(var(--box-size) * 5);
+	grid-template-columns: repeat(5, 1fr);
+	list-style: none;
+}
+/* LI PROPERTIES FOR ALL THE LI'S IN THE DOM */
+
+li {
+	height: var(--box-size);
+	width: var(--box-size);
+	position: relative;
+	text-align: center;
+	line-height: var(--box-size);
+	z-index: 1;
+}
+/* SPAN PROPERTIES FOR ALL THE SPAN'S IN THE DOM */
+span {
+	height: var(--box-size);
+	width: var(--box-size);
+	position: absolute;
+	left: 0;
+	z-index: -1;
+}
