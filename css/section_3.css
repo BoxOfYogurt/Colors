@@ -1,0 +1,41 @@
+.list_3 li:nth-child(1) {
+	background-color: red;
+}
+.list_3 li:nth-child(2) {
+	background-color: blue;
+}
+.list_3 li:nth-child(3) {
+	background-color: green;
+}
+.list_3 li:nth-child(4) {
+	background-color: magenta;
+}
+.list_3 li:nth-child(5) {
+	background-color: pink;
+}
+.list_3 li p {
+	transition: 0.5s;
+}
+.list_3 li:hover p {
+    color: white;
+    transition-delay: 0.4s;
+}
+.list_3 li span {
+    background-color: var(--bg-color);
+    width: var(--box-size);
+    height: var(--box-size);
+    border-radius: 50%;
+	left: 0;
+	top: 0;
+    transform: translateY(0%) scale(2);
+    transition: 1s;
+}
+
+.list_3 li:hover span {
+	height: 0;
+	width: 0;
+	
+	left: 50%;
+	top: 50%;
+	
+}
